@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProcessingLogs.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebAppOrgLogDirPaths" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\204,C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\206,C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\162,C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\163,C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\165,C:\Projects\github\tys-hiroshi\storage\OrgLogs\WebAppLogs\166</Value>
+    </Setting>
+    <Setting Name="WebAppLogDirPaths" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\204,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\206,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\162,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\163,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\165,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\166</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
