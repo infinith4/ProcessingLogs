@@ -46,5 +46,17 @@ namespace ProcessingLogs.Properties {
                 this["WebAppLogDirPaths"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("タイムアウト,timeout,デッドロック")]
+        public string SearchWords {
+            get {
+                return ((string)(this["SearchWords"]));
+            }
+            set {
+                this["SearchWords"] = value;
+            }
+        }
     }
 }

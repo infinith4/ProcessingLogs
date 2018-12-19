@@ -19,7 +19,7 @@ namespace ProcessingLogs
 
             var dateTimeNow = DateTime.Now;
             var dateTimeDateStr = dateTimeNow.ToString("yyyyMMdd");
-            for (var i = 0; i < webAppOrgLogPaths.Length;i++)
+            for (var i = 0; i < webAppOrgLogPaths.Length; i++)
             {
                 if (!Directory.Exists(webAppLogPaths[i]))
                 {
@@ -32,10 +32,35 @@ namespace ProcessingLogs
                     var fileName = Path.GetFileName(orgFile);
                     if (fileName.Contains(dateTimeDateStr))
                     {
-                        File.Copy(orgFile, Path.Combine(webAppLogPaths[i], fileName), true);
+                        string newFilePath = Path.Combine(webAppLogPaths[i], fileName);
+                        File.Copy(orgFile, newFilePath, true);
                     }
                 }
             }
+
+            var searchWordsStr = Properties.Settings.Default.SearchWords;
+            var searchWords = searchWordsStr.Split(',');
+            var searchCount = 0;
+            for (var i = 0; i < webAppLogPaths.Length; i++)
+            {
+                string[] files = Directory.GetFiles(webAppLogPaths[i], "*", SearchOption.AllDirectories);
+                foreach (var file in files)
+                {
+                    string[] contentStrArray = File.ReadAllLines(file, Encoding.UTF8);
+                    for (int j = 0; j < contentStrArray.GetLength(0); j++)
+                    {
+                        foreach (var searchWord in searchWords)
+                        {
+                            if (contentStrArray[j].Contains(searchWord))
+                            {
+                                searchCount++;
+                            }
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine(searchCount);
         }
     }
 }

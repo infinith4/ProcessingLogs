@@ -8,5 +8,8 @@
     <Setting Name="WebAppLogDirPaths" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\204,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\206,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\162,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\163,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\165,C:\Projects\github\tys-hiroshi\storage\Logs\WebAppLogs\166</Value>
     </Setting>
+    <Setting Name="SearchWords" Type="System.String" Scope="User">
+      <Value Profile="(Default)">タイムアウト,timeout,デッドロック</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
